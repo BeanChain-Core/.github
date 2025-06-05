@@ -1,35 +1,95 @@
-#  BeanChain
+# BeanChain
 
-**BeanChain** is a modular, transparent blockchain ecosystem built for speed, flexibility, and developer empowerment. With a layered architecture and fully extensible transaction system, BeanChain supports on-chain and off-chain logic, multi-language contract execution, and fully customizable node roles.
+**BeanChain** is a modular, transparent blockchain ecosystem built for speed, flexibility, and developer empowerment. Designed with a layered architecture, extensible transaction system, and a strong focus on customizability, BeanChain supports both on-chain and off-chain logic, multi-language contract execution, and permissionless node development.
 
-We’re deep in development and actively expanding our team. The BeanChain devnet is evolving fast — and we’re almost ready to open the doors to a broader community.
-
----
-
-## Core Technologies
-
-- **Layered Node Architecture** — GPN (Genesis Public Node), PN (Public Node), RN (Reward Node), CEN (Contract Execution Node), and more  
-- **Custom TX Types & Flags** — Transfer, Reward, Airdrop, Mint, Contract Call, and more  
-- **Off-Chain Smart Contract Execution** — via `CENCALL` and `fundedCENCALL`  
-- **Layer 2 Token Minting and Transfers**  
-- **Peripheral Node Support** — build your own node modules that connect, listen, and react to chain data  
-- **Multi-Language Contract Goals** — upcoming support for contracts written in Java, Go, Python and more  
-- **Shared Core Module** — `bean-pack-java` powers consistent transaction and contract logic across all nodes  
+> Currently in devnet phase — powered by a growing set of core tools, core nodes, and custom SDKs maintained by the **BeanChain Core Team** under **Outlandish Tech**, a division of **Outlandish Creative LLC**.
 
 ---
 
-## What's Coming
+## Core Architecture
 
-- **Discord Community Launch** — soon opening our server for devs, builders, and curious minds  
-- **Historical Node Framework** — SQL-accessible chain history for explorers and dApps  
-- **GhostNet Testnet** — a themed fork of the chain for creative public testing  
-- **Lightweight Node Kits** — portable P2P node skeletons 
+At the heart of BeanChain is a flexible, layered node system that allows the network to scale horizontally and vertically:
+
+- **GPN – Genesis Public Node**  
+  The first public node on the chain. Acts as the anchor for synchronization and transaction gossip.
+
+- **PN – Public Node**  
+  Public-facing node for wallet access and transaction relay. Maintains Spring Boot APIs for integration.
+
+- **RN – Reward Node**  
+  Handles system-level transaction generation: faucet payouts, validator gas rewards, early wallet distributions. Also tracks validator trust scores via ping/pong logic.  
+  [GitHub Repo → BeanChain-Core/RN](https://github.com/BeanChain-Core/RN)
+
+- **CEN – Contract Execution Node**  
+  Executes off-chain smart contract logic and initiates contract-based Layer 1 or Layer 2 transactions.
+
+- **Historical Node** *(Coming Soon)*  
+  A SQL-powered node that stores block history and exposes high-performance, load-balanced endpoints for explorers and DApps.
+
+> Peripheral nodes like the CEN and Historical Node will be released in **barebones, customizable form**, allowing developers to build and extend node logic freely while connected to the network.
 
 ---
 
-## 💡 Get Involved
+## Technology Highlights
 
-BeanChain is still in early development, but the vision is growing — and so is the team. We're looking for developers, open-source contributors, and infrastructure thinkers to help shape the future of modular blockchain design.
+- **Custom Transaction Types & Flags**  
+  Built-in support for `transfer`, `reward`, `airdrop`, `mint`, `contractCall`, `fundedCENCALL`, and more.
 
-📬 **Contact:** `team@limabean.xyz`
+- **Off-Chain Contract Execution**  
+  Via CENs, enabling lightweight contract logic without bloating consensus layers.
 
+- **Layer 2 Token Framework**  
+  Full minting, burning, and transferring support for fungible tokens, stored and indexed in the Layer2DB.
+
+- **Peripheral Node Flexibility**  
+  Build custom nodes that connect to the network and trigger logic — including oracles, APIs, automation, and more.
+
+- **Multi-Language Contract Support** *(in progress)*  
+  Java support is live. Go, Python, and JS support are in planning to open the CEN to any developer language.
+
+- **Shared Core SDK**  
+  [`BeanPack-Java`](https://github.com/BeanChain-Core/BeanPack-Java) — the official Java SDK providing transaction logic, hashing, Merkle tree utilities, and model definitions for Java-based tools and nodes.
+
+---
+
+## Ecosystem Projects
+
+| Project | Description |
+|--------|-------------|
+| [`BeanNode`](https://github.com/BeanChain-Core/BeanNode) | Main validator node implementation (GPN, PN, PRN) |
+| [`BeanPack-Java`](https://github.com/BeanChain-Core/BeanPack-Java) | Shared SDK for transactions, signatures, and node logic |
+| [`LimaBeanWallet`](https://github.com/BeanChain-Core/LimaBeanWallet) | Wallet frontend for sending transactions, minting tokens, and managing assets |
+| [`BeanChain.io`](https://github.com/BeanChain-Core/BeanChain.io) | Visual block explorer and documentation hub |
+| [`Reward Node (RN)`](https://github.com/BeanChain-Core/RN) | System-level transaction engine for rewards and faucets |
+| *Contract Execution Node (CEN)* | Contract processor — **repo coming soon** |
+| *Historical Node* | SQL-based block fetch node — **repo coming soon** |
+| *BaseNode* | Lightweight network-ready shell for oracles and custom tools — **repo coming soon** |
+
+---
+
+## What’s Coming
+
+- **Discord Community Launch**  
+  Full public server for devs, builders, validators, and explorers
+
+- **Historical Node Deployment**  
+  Clustered, load-balanced fetch system for explorers and DApps
+
+- **GhostNet Testnet**  
+  A themed public fork of the chain for creative, chaotic testing
+
+- **Lightweight Node Kits**  
+  Portable skeletons for oracles, bots, games, and network-connected tools
+
+---
+
+## Get Involved
+
+BeanChain is still in early development — but growing fast. We’re looking for open-source contributors, blockchain engineers, infrastructure builders, and curious tinkerers to join the next wave of decentralized tooling.
+
+📬 **Reach out:** `team@limabean.xyz`
+
+---
+
+Crafted by the **BeanChain Core Team**  
+Under **Outlandish Tech**, powered by **Outlandish Creative LLC**
