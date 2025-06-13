@@ -68,6 +68,13 @@ At the heart of BeanChain is a flexible, layered node system designed to scale h
 | [`BaseNode (xNodeTemplate)`](https://github.com/BeanChain-Core/BaseNode) | Lightweight skeleton for oracles, bots, and custom node logic |
 
 ---
+## Documentation
+
+Core documentation, including setup guides and the full project roadmap, is available in the [**BeanChain Docs**](https://github.com/BeanChain-Core/docs) repository.
+
+→ View the [**Roadmap**](https://github.com/BeanChain-Core/docs/blob/main/roadmap.md) directly
+
+---
 
 ## What's Coming
 
