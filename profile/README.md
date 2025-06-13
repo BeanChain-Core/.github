@@ -87,7 +87,7 @@ At the heart of BeanChain is a flexible, layered node system designed to scale h
 
 ## Get Involved
 
-BeanChain is still early — but growing fast. We’re looking for:
+BeanChain is still early — but growing fast. We’re building in the open and welcoming new contributors.
 
 **Technical Contributors:**
 - Core protocol developers
@@ -96,14 +96,15 @@ BeanChain is still early — but growing fast. We’re looking for:
 - Open-source contributors
 
 **Creative & Community Roles:**
-- Digital artists and asset designers
-- UI/UX and product designers
-- Discord moderators and community builders
-- Explorers, testers, and curious minds
+- Digital artists and asset designers  
+- UI/UX and product designers  
+- Discord moderators and community builders  
+- Explorers, testers, and curious minds  
 
 If you're excited by decentralized infrastructure, experimental tech, and collaborative creativity — there's a place for you here.
 
-📬 **Contact us:** `team@limabean.xyz`
+📬 **Contact us:** `team@limabean.xyz`  
+💬 **Join the community:** [discord.gg/RMgbSkNF](https://discord.gg/RMgbSkNF)
 
 ---
 
